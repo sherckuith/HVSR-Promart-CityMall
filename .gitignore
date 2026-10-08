@@ -1,0 +1,6 @@
+# Conversaciones exportadas de WhatsApp
+bitacora*.txt
+**/+*.zip
+
+# MiniSEED descartados de la clasificación
+**/Registros/Descartados/*.mseed
