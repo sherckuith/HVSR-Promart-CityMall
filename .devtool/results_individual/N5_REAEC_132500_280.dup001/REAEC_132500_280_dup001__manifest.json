@@ -1,0 +1,309 @@
+{
+  "a0": 16453733.525189683,
+  "allow_counts": false,
+  "analysis": {
+    "f_max": 50.0,
+    "f_min": 0.1,
+    "konno_bandwidth": 40.0,
+    "overlap_seconds": 10.0,
+    "peak_prominence": 0.6,
+    "peak_selection": "first_prominent",
+    "probability_high": 0.9,
+    "probability_low": 0.1,
+    "window_seconds": 20.0
+  },
+  "artifacts": {
+    "hvsr_csv": "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N5_REAEC_132500_280.dup001\\REAEC_132500_280_dup001__hvsr.csv",
+    "images": [
+      "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N5_REAEC_132500_280.dup001\\REAEC_132500_280_dup001__hvsr_periodo.png"
+    ],
+    "results_json": "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N5_REAEC_132500_280.dup001\\REAEC_132500_280_dup001__resultados.json",
+    "results_toml": "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N5_REAEC_132500_280.dup001\\REAEC_132500_280_dup001__resultados.toml"
+  },
+  "auto_contrast": true,
+  "axes": {
+    "frequency_max": 20.0,
+    "frequency_min": 0.1,
+    "period_max": 10.0,
+    "period_min": 0.05,
+    "x_scale": "log",
+    "y_max": null,
+    "y_min": 0.0,
+    "y_scale": "linear"
+  },
+  "coordinates": {
+    "elevation_m": 4.0,
+    "latitude": -2.139831,
+    "longitude": -79.9095325
+  },
+  "curves": {
+    "band_color": [
+      145,
+      145,
+      145
+    ],
+    "important_max_std": false,
+    "konno_ohmachi_color": [
+      220,
+      0,
+      0
+    ],
+    "max_std_color": [
+      255,
+      140,
+      0
+    ],
+    "mean_color": [
+      0,
+      0,
+      0
+    ],
+    "median_color": [
+      128,
+      0,
+      32
+    ],
+    "min_std_color": [
+      0,
+      64,
+      160
+    ],
+    "probability_zone_color": [
+      120,
+      120,
+      120
+    ],
+    "probability_zone_opacity": 0.3,
+    "smoothing_enabled": true,
+    "smoothing_strength": 5.0,
+    "t_mean_color": [
+      105,
+      105,
+      105
+    ]
+  },
+  "f0_hz": 0.1,
+  "footer": {
+    "bold": false,
+    "color": [
+      18,
+      59,
+      115
+    ],
+    "font": "sans-serif",
+    "line_spacing_px": 4,
+    "margin_px": 56,
+    "opacity": 1.0,
+    "position": "bottom-right",
+    "size": 17,
+    "text": "Procesado por :  Ing. Angel Yaguana Hernandez Dr Hc  -  Ardasysmic SAS - Quito - Ecuador\nEmail: angel.yaguana@ardasysmic.com - Telf: +593962337453"
+  },
+  "format": "png",
+  "height": 1080,
+  "image_selection": {
+    "hvsr_frequency": false,
+    "hvsr_period": true,
+    "noise": false,
+    "record": false,
+    "separate_frequency": false,
+    "separate_period": false
+  },
+  "images": 3,
+  "instrument_response": [
+    {
+      "applied": true,
+      "end_date": null,
+      "fir_coefficients": 38,
+      "fir_decimation_factor": 2,
+      "input_units": "M/S",
+      "nslc": "AM.REAEC.00.EHZ",
+      "output_units": "COUNTS",
+      "poles": 4,
+      "sensitivity": 399650000.0,
+      "sensitivity_frequency_hz": 5.0,
+      "start_date": "2025-01-19T10:19:21.631+00:00",
+      "zeros": 3
+    },
+    {
+      "applied": true,
+      "end_date": null,
+      "fir_coefficients": 38,
+      "fir_decimation_factor": 2,
+      "input_units": "M/S**2",
+      "nslc": "AM.REAEC.00.ENZ",
+      "output_units": "COUNTS",
+      "poles": 2,
+      "sensitivity": 384500.0,
+      "sensitivity_frequency_hz": 5.0,
+      "start_date": "2025-01-19T10:19:21.631+00:00",
+      "zeros": 0
+    },
+    {
+      "applied": true,
+      "end_date": null,
+      "fir_coefficients": 38,
+      "fir_decimation_factor": 2,
+      "input_units": "M/S**2",
+      "nslc": "AM.REAEC.00.ENN",
+      "output_units": "COUNTS",
+      "poles": 2,
+      "sensitivity": 384500.0,
+      "sensitivity_frequency_hz": 5.0,
+      "start_date": "2025-01-19T10:19:21.631+00:00",
+      "zeros": 0
+    },
+    {
+      "applied": true,
+      "end_date": null,
+      "fir_coefficients": 38,
+      "fir_decimation_factor": 2,
+      "input_units": "M/S**2",
+      "nslc": "AM.REAEC.00.ENE",
+      "output_units": "COUNTS",
+      "poles": 2,
+      "sensitivity": 384500.0,
+      "sensitivity_frequency_hz": 5.0,
+      "start_date": "2025-01-19T10:19:21.631+00:00",
+      "zeros": 0
+    }
+  ],
+  "instrument_response_mode": "sensitivity",
+  "kg": 2707253469179509.0,
+  "outputs": [
+    "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N5_REAEC_132500_280.dup001\\REAEC_132500_280_dup001__hvsr_periodo.png"
+  ],
+  "result_box": {
+    "alignment": "right",
+    "enabled": true,
+    "opacity": 1.0,
+    "size": 21
+  },
+  "site": {
+    "id": "AM.REAEC.00",
+    "location": "00",
+    "network": "AM",
+    "station": "REAEC"
+  },
+  "skip_initial_seconds": 10.0,
+  "source": "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\Sitios Nakamura\\N5\\Registros\\REAEC_132500_280.dup001.mseed",
+  "stationxml": {
+    "complete": true,
+    "coordinates": {
+      "elevation_m": 4.0,
+      "latitude": -2.139831,
+      "location": "00",
+      "longitude": -79.9095325,
+      "network": "AM",
+      "station": "REAEC"
+    },
+    "discovery": "auto",
+    "matched_nslc": [
+      "AM.REAEC.00.EHZ",
+      "AM.REAEC.00.ENZ",
+      "AM.REAEC.00.ENN",
+      "AM.REAEC.00.ENE"
+    ],
+    "missing_nslc": [],
+    "path": "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\Sitios Nakamura\\N5\\Registros\\REAEC.xml"
+  },
+  "statistics": {
+    "f0_high_hz": null,
+    "f0_low_hz": null,
+    "f0_median_hz": null,
+    "period_high_s": null,
+    "period_low_s": null,
+    "period_median_s": null,
+    "t_mean_hz": null,
+    "valid_window_peaks_hz": []
+  },
+  "t0_s": 10.0,
+  "theme": "light",
+  "title": {
+    "alignment": "center",
+    "font": "Arial Black",
+    "opacity": 1.0,
+    "size": 22,
+    "text": "INFORME SÍSMICO · HVSR NAKAMURA",
+    "top_margin": 64
+  },
+  "traces": [
+    {
+      "channel": "EHZ",
+      "duration_s": 290.0,
+      "elevation_m": 4.0,
+      "latitude": -2.139831,
+      "location": "00",
+      "longitude": -79.9095325,
+      "network": "AM",
+      "nslc": "AM.REAEC.00.EHZ",
+      "sample_count": 29000,
+      "sample_rate_hz": 100.0,
+      "sensitivity": 399650000.0,
+      "start_time": "2026-10-07T13:25:10+00:00",
+      "station": "REAEC",
+      "unit": "m/s²"
+    },
+    {
+      "channel": "ENZ",
+      "duration_s": 290.0,
+      "elevation_m": 4.0,
+      "latitude": -2.139831,
+      "location": "00",
+      "longitude": -79.9095325,
+      "network": "AM",
+      "nslc": "AM.REAEC.00.ENZ",
+      "sample_count": 29000,
+      "sample_rate_hz": 100.0,
+      "sensitivity": 384500.0,
+      "start_time": "2026-10-07T13:25:10+00:00",
+      "station": "REAEC",
+      "unit": "m/s²"
+    },
+    {
+      "channel": "ENN",
+      "duration_s": 290.0,
+      "elevation_m": 4.0,
+      "latitude": -2.139831,
+      "location": "00",
+      "longitude": -79.9095325,
+      "network": "AM",
+      "nslc": "AM.REAEC.00.ENN",
+      "sample_count": 29000,
+      "sample_rate_hz": 100.0,
+      "sensitivity": 384500.0,
+      "start_time": "2026-10-07T13:25:10+00:00",
+      "station": "REAEC",
+      "unit": "m/s²"
+    },
+    {
+      "channel": "ENE",
+      "duration_s": 290.0,
+      "elevation_m": 4.0,
+      "latitude": -2.139831,
+      "location": "00",
+      "longitude": -79.9095325,
+      "network": "AM",
+      "nslc": "AM.REAEC.00.ENE",
+      "sample_count": 29000,
+      "sample_rate_hz": 100.0,
+      "sensitivity": 384500.0,
+      "start_time": "2026-10-07T13:25:10+00:00",
+      "station": "REAEC",
+      "unit": "m/s²"
+    }
+  ],
+  "unit_warning": null,
+  "units": "physical",
+  "units_requested": "acceleration",
+  "warning_position": "top-left",
+  "warning_visible": false,
+  "watermark": {
+    "enabled": false,
+    "margin_px": 56,
+    "opacity": 0.30000001192092896,
+    "path": "assets/ardasysmic_logo_sin_nombre.png",
+    "position": "top-left",
+    "scale": 0.25
+  },
+  "width": 1920
+}

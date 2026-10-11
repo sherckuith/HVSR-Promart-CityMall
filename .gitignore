@@ -1,6 +1,5 @@
-# Conversaciones exportadas de WhatsApp
-bitacora*.txt
-**/+*.zip
+# Exportacion de conversacion de WhatsApp
++593 96 953 1673.zip
 
-# MiniSEED descartados de la clasificación
-**/Registros/Descartados/*.mseed
+# Archivos temporales de bloqueo de Office
+~$*

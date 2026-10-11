@@ -1,0 +1,228 @@
+{
+  "a0": 12.758686456078383,
+  "allow_counts": false,
+  "analysis": {
+    "f_max": 50.0,
+    "f_min": 0.1,
+    "konno_bandwidth": 40.0,
+    "overlap_seconds": 10.0,
+    "peak_prominence": 0.6,
+    "peak_selection": "first_prominent",
+    "probability_high": 0.9,
+    "probability_low": 0.1,
+    "window_seconds": 20.0
+  },
+  "artifacts": {
+    "hvsr_csv": "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N1_DESC_R13D7_183500_278.dup002\\R13D7_183500_278_dup002__hvsr.csv",
+    "images": [
+      "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N1_DESC_R13D7_183500_278.dup002\\R13D7_183500_278_dup002__hvsr_periodo.png"
+    ],
+    "results_json": "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N1_DESC_R13D7_183500_278.dup002\\R13D7_183500_278_dup002__resultados.json",
+    "results_toml": "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N1_DESC_R13D7_183500_278.dup002\\R13D7_183500_278_dup002__resultados.toml"
+  },
+  "auto_contrast": true,
+  "axes": {
+    "frequency_max": 20.0,
+    "frequency_min": 0.1,
+    "period_max": 10.0,
+    "period_min": 0.05,
+    "x_scale": "log",
+    "y_max": null,
+    "y_min": 0.0,
+    "y_scale": "linear"
+  },
+  "coordinates": null,
+  "curves": {
+    "band_color": [
+      145,
+      145,
+      145
+    ],
+    "important_max_std": false,
+    "konno_ohmachi_color": [
+      220,
+      0,
+      0
+    ],
+    "max_std_color": [
+      255,
+      140,
+      0
+    ],
+    "mean_color": [
+      0,
+      0,
+      0
+    ],
+    "median_color": [
+      128,
+      0,
+      32
+    ],
+    "min_std_color": [
+      0,
+      64,
+      160
+    ],
+    "probability_zone_color": [
+      120,
+      120,
+      120
+    ],
+    "probability_zone_opacity": 0.3,
+    "smoothing_enabled": true,
+    "smoothing_strength": 5.0,
+    "t_mean_color": [
+      105,
+      105,
+      105
+    ]
+  },
+  "f0_hz": 0.1,
+  "footer": {
+    "bold": false,
+    "color": [
+      18,
+      59,
+      115
+    ],
+    "font": "sans-serif",
+    "line_spacing_px": 4,
+    "margin_px": 56,
+    "opacity": 1.0,
+    "position": "bottom-right",
+    "size": 17,
+    "text": "Procesado por :  Ing. Angel Yaguana Hernandez Dr Hc  -  Ardasysmic SAS - Quito - Ecuador\nEmail: angel.yaguana@ardasysmic.com - Telf: +593962337453"
+  },
+  "format": "png",
+  "height": 1080,
+  "image_selection": {
+    "hvsr_frequency": false,
+    "hvsr_period": true,
+    "noise": false,
+    "record": false,
+    "separate_frequency": false,
+    "separate_period": false
+  },
+  "images": 3,
+  "instrument_response": [],
+  "instrument_response_mode": "sensitivity",
+  "kg": 1627.8408008451795,
+  "outputs": [
+    "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\.devtool\\results_individual\\N1_DESC_R13D7_183500_278.dup002\\R13D7_183500_278_dup002__hvsr_periodo.png"
+  ],
+  "result_box": {
+    "alignment": "right",
+    "enabled": true,
+    "opacity": 1.0,
+    "size": 21
+  },
+  "site": null,
+  "skip_initial_seconds": 10.0,
+  "source": "d:\\2026\\ARDASYSMIC\\ARDASYSMIC_26\\Trabajos\\Promart-CityMall\\Sitios Nakamura\\N1\\Registros\\Descartados\\R13D7_183500_278.dup002.mseed",
+  "stationxml": {
+    "complete": false,
+    "coordinates": null,
+    "discovery": "none",
+    "matched_nslc": [],
+    "missing_nslc": [
+      "AM.R13D7.00.EHZ",
+      "AM.R13D7.00.EHN",
+      "AM.R13D7.00.EHE"
+    ],
+    "path": null
+  },
+  "statistics": {
+    "f0_high_hz": 0.8499999999999999,
+    "f0_low_hz": 0.5,
+    "f0_median_hz": 0.65,
+    "period_high_s": 2.0,
+    "period_low_s": 1.1764705882352944,
+    "period_median_s": 1.5384615384615383,
+    "t_mean_hz": 0.675,
+    "valid_window_peaks_hz": [
+      0.5,
+      0.5,
+      0.55,
+      0.65,
+      0.65,
+      0.65,
+      0.7,
+      1.2
+    ]
+  },
+  "t0_s": 10.0,
+  "theme": "light",
+  "title": {
+    "alignment": "center",
+    "font": "Arial Black",
+    "opacity": 1.0,
+    "size": 22,
+    "text": "INFORME SÍSMICO · HVSR NAKAMURA",
+    "top_margin": 64
+  },
+  "traces": [
+    {
+      "channel": "EHZ",
+      "duration_s": 290.0,
+      "elevation_m": null,
+      "latitude": null,
+      "location": "00",
+      "longitude": null,
+      "network": "AM",
+      "nslc": "AM.R13D7.00.EHZ",
+      "sample_count": 29000,
+      "sample_rate_hz": 100.0,
+      "sensitivity": null,
+      "start_time": "2026-10-05T18:35:10+00:00",
+      "station": "R13D7",
+      "unit": "counts"
+    },
+    {
+      "channel": "EHN",
+      "duration_s": 290.0,
+      "elevation_m": null,
+      "latitude": null,
+      "location": "00",
+      "longitude": null,
+      "network": "AM",
+      "nslc": "AM.R13D7.00.EHN",
+      "sample_count": 29000,
+      "sample_rate_hz": 100.0,
+      "sensitivity": null,
+      "start_time": "2026-10-05T18:35:10+00:00",
+      "station": "R13D7",
+      "unit": "counts"
+    },
+    {
+      "channel": "EHE",
+      "duration_s": 290.0,
+      "elevation_m": null,
+      "latitude": null,
+      "location": "00",
+      "longitude": null,
+      "network": "AM",
+      "nslc": "AM.R13D7.00.EHE",
+      "sample_count": 29000,
+      "sample_rate_hz": 100.0,
+      "sensitivity": null,
+      "start_time": "2026-10-05T18:35:10+00:00",
+      "station": "R13D7",
+      "unit": "counts"
+    }
+  ],
+  "unit_warning": "No se suministró StationXML compatible; las amplitudes permanecen en counts (informe diagnóstico)",
+  "units": "counts-diagnostic",
+  "units_requested": "auto",
+  "warning_position": "top-left",
+  "warning_visible": false,
+  "watermark": {
+    "enabled": false,
+    "margin_px": 56,
+    "opacity": 0.30000001192092896,
+    "path": "assets/ardasysmic_logo_sin_nombre.png",
+    "position": "top-left",
+    "scale": 0.25
+  },
+  "width": 1920
+}

@@ -1,0 +1,350 @@
+source = 'D:\2026\ARDASYSMIC\ARDASYSMIC_26\Trabajos\Promart-CityMall\Sitios Nakamura\N15\Registros\R13D7_201000_280.mseed'
+files = ['D:\2026\ARDASYSMIC\ARDASYSMIC_26\Trabajos\Promart-CityMall\Sitios Nakamura\N15\Registros\R13D7_201000_280.mseed']
+stationxml = 'D:\2026\ARDASYSMIC\ARDASYSMIC_26\Trabajos\Promart-CityMall\Sitios Nakamura\N15\Registros\R13D7.xml'
+stationxml_discovery = "auto"
+stationxml_complete = true
+matched_nslc = [
+    "AM.R13D7.00.EHZ",
+    "AM.R13D7.00.EHN",
+    "AM.R13D7.00.EHE",
+]
+missing_nslc = []
+requested_units = "auto"
+units_status = "physical"
+f0_hz = 0.65
+t0_s = 1.5384615384615383
+a0 = 8.25289921862329
+kg = 104.78514694269677
+num_windows = 28
+window_length_s = 20.0
+num_cycles = 364.0
+reliable = false
+
+[site]
+id = "AM.R13D7.00"
+network = "AM"
+station = "R13D7"
+location = "00"
+
+[coordinates]
+latitude = -2.1402582
+longitude = -79.9101212
+elevation_m = 4.0
+
+[[instrument_response]]
+nslc = "AM.R13D7.00.EHZ"
+input_units = "M/S"
+output_units = "COUNTS"
+sensitivity = 360000000.0
+sensitivity_frequency_hz = 5.0
+poles = 4
+zeros = 3
+fir_coefficients = 38
+fir_decimation_factor = 2
+start_date = "2026-10-04T08:21:31.382+00:00"
+applied = true
+
+[[instrument_response]]
+nslc = "AM.R13D7.00.EHN"
+input_units = "M/S"
+output_units = "COUNTS"
+sensitivity = 360000000.0
+sensitivity_frequency_hz = 5.0
+poles = 4
+zeros = 3
+fir_coefficients = 38
+fir_decimation_factor = 2
+start_date = "2026-10-04T08:21:31.382+00:00"
+applied = true
+
+[[instrument_response]]
+nslc = "AM.R13D7.00.EHE"
+input_units = "M/S"
+output_units = "COUNTS"
+sensitivity = 360000000.0
+sensitivity_frequency_hz = 5.0
+poles = 4
+zeros = 3
+fir_coefficients = 38
+fir_decimation_factor = 2
+start_date = "2026-10-04T08:21:31.382+00:00"
+applied = true
+
+[processing]
+skip_initial_seconds = 10.0
+detrend = "none"
+filter = "none"
+instrument_response = "sensitivity"
+window_seconds = 20.0
+overlap_seconds = 10.0
+konno_bandwidth = 40.0
+
+[graphics]
+width = 1920
+height = 1080
+format = "png"
+theme = "light"
+x_scale = "log"
+y_scale = "linear"
+frequency_range_hz = [
+    0.1,
+    20.0,
+]
+period_range_s = [
+    0.05,
+    10.0,
+]
+
+[graphics.images]
+record = false
+noise = false
+hvsr_period = true
+hvsr_frequency = false
+separate_period = false
+separate_frequency = false
+
+[statistics]
+f0_low_hz = 0.505
+f0_high_hz = 0.7850000000000001
+f0_median_hz = 0.65
+t_mean_hz = 0.6416666666666667
+period_low_s = 1.273885350318471
+period_median_s = 1.5384615384615383
+period_high_s = 1.9801980198019802
+valid_window_peaks_hz = [
+    0.5,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.65,
+    0.65,
+    0.65,
+    0.65,
+    0.65,
+    0.8,
+    0.85,
+]
+
+[validation]
+stationxml_complete = true
+units_physical = true
+counts_diagnostic = false
+allow_counts = false
+warning_visible = false
+
+[[noise]]
+channel = "EHZ"
+unit = "m/s"
+rms = 0.00000000000011171924684900837
+peak = 0.00000000000022235229456176361
+psd_min_log10 = -30.692399854149617
+psd_max_log10 = -22.665833523554774
+octave_centers_hz = [
+    0.7750981699063472,
+    0.9765625,
+    1.2303916502879626,
+    1.5501963398126943,
+    1.953125,
+    2.460783300575925,
+    3.1003926796253887,
+    3.90625,
+    4.921566601151848,
+    6.200785359250781,
+    7.8125,
+    9.843133202303695,
+    12.401570718501562,
+    15.625,
+    19.68626640460739,
+    24.803141437003124,
+    31.25,
+    39.37253280921478,
+    49.60628287400625,
+    62.5,
+    78.74506561842958,
+    99.21256574801247,
+]
+octave_log10_psd = [
+    -23.533282668260753,
+    -23.438303830523836,
+    -23.52707265631871,
+    -23.605717514368376,
+    -23.475324863069634,
+    -23.182812593603,
+    -23.346888182283084,
+    -23.87641607374686,
+    -24.030781736602663,
+    -24.330563579113548,
+    -24.570227223632276,
+    -24.524538169491915,
+    -24.388026009251885,
+    -24.36112261373782,
+    -24.471084300086932,
+    -24.5376149221729,
+    -24.67743495644159,
+    -24.917731053240928,
+    -26.885238396478275,
+    -30.692399854149617,
+    -30.692399854149617,
+    -30.692399854149617,
+]
+
+[[noise]]
+channel = "EHN"
+unit = "m/s"
+rms = 0.00000000000010827229837227777
+peak = 0.00000000000020289496913190104
+psd_min_log10 = -30.361813773934863
+psd_max_log10 = -21.651614528583227
+octave_centers_hz = [
+    0.7750981699063472,
+    0.9765625,
+    1.2303916502879626,
+    1.5501963398126943,
+    1.953125,
+    2.460783300575925,
+    3.1003926796253887,
+    3.90625,
+    4.921566601151848,
+    6.200785359250781,
+    7.8125,
+    9.843133202303695,
+    12.401570718501562,
+    15.625,
+    19.68626640460739,
+    24.803141437003124,
+    31.25,
+    39.37253280921478,
+    49.60628287400625,
+    62.5,
+    78.74506561842958,
+    99.21256574801247,
+]
+octave_log10_psd = [
+    -22.72933856103034,
+    -22.999468021326614,
+    -23.393845681907315,
+    -23.820761984481184,
+    -23.903045502207863,
+    -23.629483108311238,
+    -23.652627550384707,
+    -24.177573271822865,
+    -24.170675797110853,
+    -24.31781825610566,
+    -24.568038703581486,
+    -24.588574981881624,
+    -24.48713992720718,
+    -24.747416961487158,
+    -24.841108203948917,
+    -24.64044569160053,
+    -24.44800096625613,
+    -24.886109545532715,
+    -26.99048281657796,
+    -30.361813773934863,
+    -30.361813773934863,
+    -30.361813773934863,
+]
+
+[[noise]]
+channel = "EHE"
+unit = "m/s"
+rms = 0.0000000000001095483869285971
+peak = 0.00000000000020620643934105625
+psd_min_log10 = -30.030969810323207
+psd_max_log10 = -21.81074271906569
+octave_centers_hz = [
+    0.7750981699063472,
+    0.9765625,
+    1.2303916502879626,
+    1.5501963398126943,
+    1.953125,
+    2.460783300575925,
+    3.1003926796253887,
+    3.90625,
+    4.921566601151848,
+    6.200785359250781,
+    7.8125,
+    9.843133202303695,
+    12.401570718501562,
+    15.625,
+    19.68626640460739,
+    24.803141437003124,
+    31.25,
+    39.37253280921478,
+    49.60628287400625,
+    62.5,
+    78.74506561842958,
+    99.21256574801247,
+]
+octave_log10_psd = [
+    -22.854502185203337,
+    -23.22450187106397,
+    -23.366913437873137,
+    -23.324605452741604,
+    -23.46490630531436,
+    -23.467576672920448,
+    -23.889158746041726,
+    -24.00741042112973,
+    -24.256731223737493,
+    -24.447451240419866,
+    -24.287556418192604,
+    -24.41326317076745,
+    -24.388033037218026,
+    -24.333322512980867,
+    -23.621395726176516,
+    -24.708396854458904,
+    -24.771226735842358,
+    -24.398417337720705,
+    -25.914375239096863,
+    -30.030969810323207,
+    -30.030969810323207,
+    -30.030969810323207,
+]
+
+[[traces]]
+nslc = "AM.R13D7.00.EHZ"
+network = "AM"
+station = "R13D7"
+location = "00"
+channel = "EHZ"
+start_time = "2026-10-07T20:10:10+00:00"
+sample_rate_hz = 100.0
+sample_count = 29000
+duration_s = 290.0
+unit = "m/s"
+latitude = -2.1402582
+longitude = -79.9101212
+elevation_m = 4.0
+sensitivity = 360000000.0
+
+[[traces]]
+nslc = "AM.R13D7.00.EHN"
+network = "AM"
+station = "R13D7"
+location = "00"
+channel = "EHN"
+start_time = "2026-10-07T20:10:10+00:00"
+sample_rate_hz = 100.0
+sample_count = 29000
+duration_s = 290.0
+unit = "m/s"
+latitude = -2.1402582
+longitude = -79.9101212
+elevation_m = 4.0
+sensitivity = 360000000.0
+
+[[traces]]
+nslc = "AM.R13D7.00.EHE"
+network = "AM"
+station = "R13D7"
+location = "00"
+channel = "EHE"
+start_time = "2026-10-07T20:10:10+00:00"
+sample_rate_hz = 100.0
+sample_count = 29000
+duration_s = 290.0
+unit = "m/s"
+latitude = -2.1402582
+longitude = -79.9101212
+elevation_m = 4.0
+sensitivity = 360000000.0
