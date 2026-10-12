@@ -27,10 +27,9 @@ Estudio geofísico de respuesta dinámica de sitio mediante mediciones de vibrac
 
 ```text
 ├── Informe/
-│   ├── HVSR Ardasysmic - Geosísmica - Promart CityMall.docx # Informe técnico oficial final
-│   ├── Bitacora de Registros Nakamuras.xlsx                # Bitácora e inventario de registros
-│   ├── Resultados TremorSys-cli.xlsx                       # Resumen automatizado de ejecuciones CLI
-│   ├── Promart-CityMall - IsoT0_std_area.kml               # Modelo espacial de isoperíodos para Google Earth
+│   ├── HVSR Ardasysmic - Geosísmica - Promart CityMall.docx # Informe técnico oficial final (Word)
+│   ├── HVSR Ardasysmic - Geosísmica - Promart CityMall.pdf  # Informe técnico oficial final (PDF)
+│   ├── Promart-CityMall - IsoT0_std_area - N9C.kml         # Modelo espacial de isoperíodos corregido (N9=1.26s)
 │   └── N_Sites.kml                                         # Ubicación georreferenciada de estaciones
 ├── Manuales/                                               # Manuales metodológicos y bitácora técnica
 │   ├── Manual_Metodologia_Nakamura_HVSR_Humanos.md         # Manual para ingenieros y formato libro
@@ -43,14 +42,16 @@ Estudio geofísico de respuesta dinámica de sitio mediante mediciones de vibrac
 │   │   └── results_group_filtered/                         # Salidas de análisis grupal consolidado
 │   ├── Analisis Manual - MotusWave/                        # Análisis complementario en MATLAB
 │   │   └── Sitios Nakamura/
-│   ├── Procesamiento Grafico/                              # Curvas H/V y salidas gráficas de alta resolución
+│   ├── Procesamiento Grafico/                              # Curvas H/V y mapas de isoperíodos (N9=1.26s)
+│   │   ├── Mapa_Isoperiodos_T0_N9_actualizado.png          # Figura 18 actualizada con N9=1.26 s
+│   │   └── Sitio N9 1.26s/                                 # Mallas y reportes Surfer del reanálisis N9
 │   ├── RAW/                                                # MiniSEED originales de campo (R13D7 y REAEC)
 │   └── Registros clasificados/                             # Registros organizados por estación N1..N15
 └── Registro Fotografico/                                   # Evidencia fotográfica georreferenciada
-    ├── N1/ ... N15/
-    ├── N2 R13D7/
-    ├── N3 R13D7/
-    └── N9 R13D7/
+    ├── N1 R13D7/ ... N15 R13D7/                            # Estaciones velocimetría R13D7
+    ├── N5 REAEC/, N7 REAEC/                                # Estaciones acelerometría REAEC
+    ├── N2 REAEC/, N3 REAEC/, N9 REAEC/                     # Mediciones preliminares (descartadas)
+    └── N2 R13D7/, N3 R13D7/, N9 R13D7/                     # Mediciones actualizadas R13D7
 ```
 
 ---
@@ -124,7 +125,7 @@ A partir del análisis grupal filtrado de las series de microtremores, se obtuvi
 | Nk-06 | N6 | -79.9097595 | -2.1398780 | 1.25 | 0.80 | 4.40 | 24.2 | B | **Perfil Tipo E** |
 | Nk-07 | N7 | -79.9103107 | -2.1397941 | 1.40 | 0.71 | 5.40 | 40.8 | D | **Perfil Tipo E** |
 | Nk-08 | N8 | -79.9104797 | -2.1387928 | 1.54 | 0.65 | 11.11 | 189.9 | B | **Perfil Tipo E** |
-| Nk-09 | N9 | -79.9114019 | -2.1394408 | 0.90 | 1.11 | 5.90 | 31.4 | D | **Perfil Tipo D-E** |
+| Nk-09 | N9 | -79.9114019 | -2.1394408 | 1.26 | 0.79 | 5.90 | 43.9 | D | **Perfil Tipo E** |
 | Nk-10 | N10 | -79.9115469 | -2.1395091 | 1.54 | 0.65 | 23.74 | 866.5 | B | **Perfil Tipo E** |
 | Nk-11 | N11 | -79.9115146 | -2.1394707 | 1.60 | 0.62 | 13.26 | 281.3 | D | **Perfil Tipo E** |
 | Nk-12 | N12 | -79.9112014 | -2.1391612 | 1.53 | 0.65 | 6.28 | 60.3 | D | **Perfil Tipo E** |
@@ -139,7 +140,7 @@ A partir del análisis grupal filtrado de las series de microtremores, se obtuvi
 Los resultados obtenidos fueron interpretados integrando cinco especialidades de la geociencia e ingeniería:
 
 1. **Enfoque Geotécnico (Mecánica de Suelos):**  
-   Los períodos en la mayor parte del predio ($T_0 \approx 1.43 - 1.54\text{ s}$) y velocidades de onda de corte estimadas ($V_s \approx 180 - 220\text{ m/s}$) confirman un depósito sedimentario blando (arcillas y limos estuarinos de alta compresibilidad) con espesores de **65 a 85 metros** hasta el basamento competente. Se requiere cimentación profunda (pilotes).
+   Los períodos en la mayor parte del predio ($T_0 \approx 1.26 - 1.60\text{ s}$) y velocidades de onda de corte estimadas ($V_s \approx 180 - 220\text{ m/s}$) confirman un depósito sedimentario blando (arcillas y limos estuarinos de alta compresibilidad) con espesores de **35 a 85 metros** hasta el basamento competente. Se requiere cimentación profunda (pilotes). La interpretación de períodos integra los criterios de clasificación espectral de Pasten (2018), los resultados de TremorSys-Cli y MotusWave, y la normativa NEC-SE-DS (2015).
 2. **Enfoque Sismológico:**  
    Curvas H/V de clase SESAME A y B con factores de amplificación elástica $A_0$ entre 4.4 y 16.2 (máximo 23.7 en Nk-10), evidenciando un contraste de impedancia acústica severo dominado por ondas de Rayleigh elípticas.
 3. **Enfoque Sismorresistente (Norma NEC-15):**  
@@ -147,19 +148,18 @@ Los resultados obtenidos fueron interpretados integrando cinco especialidades de
 4. **Enfoque de Ingeniería Estructural:**  
    Riesgo crítico de resonancia suelo-estructura para edificaciones aporticadas con períodos propios entre $T_n = 1.0\text{ s}$ y $T_n = 1.6\text{ s}$. Para las naves comerciales Promart se recomienda rigidizar pórticos mediante arriostramientos concéntricos para limitar el período a la zona rígida ($T_n < 0.4\text{ s}$).
 5. **Enfoque Matemático y Estadístico:**  
-   Consistencia modal en $0.65 - 0.70\text{ Hz}$ con dispersión geométrica inferior al 12%, validando la representatividad física del ensayo.
+   Consistencia modal en $0.65 - 0.83\text{ Hz}$ con dispersión geométrica inferior al 12%, validando la representatividad física del ensayo.
 
 ---
 
 ## 7. Documentos y Entregables del Proyecto
 
-- **Informe Oficial (DOCX):** [`Informe/HVSR Ardasysmic - Geosísmica - Promart CityMall.docx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/HVSR%20Ardasysmic%20-%20Geos%C3%ADsmica%20-%20Promart%20CityMall.docx) (con 18 figuras de alta resolución, curvas H/V, mapa de isoperíodos, firmas y citas bibliográficas completas).
-- **Bases de Datos Espectrales y Bitácoras (XLSX):**
-  - [`Informe/Resultados TremorSys-cli.xlsx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/Resultados%20TremorSys-cli.xlsx)
-  - [`Informe/Bitacora de Registros Nakamuras.xlsx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/Bitacora%20de%20Registros%20Nakamuras.xlsx)
+- **Informe Oficial (DOCX y PDF):**
+  - [`Informe/HVSR Ardasysmic - Geosísmica - Promart CityMall.docx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/HVSR%20Ardasysmic%20-%20Geos%C3%ADsmica%20-%20Promart%20CityMall.docx) (con 18 figuras de alta resolución, curvas H/V, mapa de isoperíodos, firmas y citas bibliográficas completas).
+  - [`Informe/HVSR Ardasysmic - Geosísmica - Promart CityMall.pdf`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/HVSR%20Ardasysmic%20-%20Geos%C3%ADsmica%20-%20Promart%20CityMall.pdf) (versión PDF oficial con firmas e informes gráficos incorporados).
 - **Modelos de Isoperíodos y Capas GIS:**
-  - Capas KML / KMZ: `Informe/Promart-CityMall - IsoT0_std_area.kml` y `Informe/N_Sites.kml`
-  - Gráficos y mallas en `Procesamiento/Procesamiento Grafico/`
+  - Capas KML / KMZ: `Informe/Promart-CityMall - IsoT0_std_area - N9C.kml` (modelo con corrección de N9 a 1.26 s) y `Informe/N_Sites.kml`
+  - Gráficos y mallas en `Procesamiento/Procesamiento Grafico/` (incluyendo `Mapa_Isoperiodos_T0_N9_actualizado.png` y subcarpeta `Sitio N9 1.26s/`)
 - **Manuales y Trazabilidad:**
   - [`Manuales/Manual_Metodologia_Nakamura_HVSR_Humanos.md`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Manuales/Manual_Metodologia_Nakamura_HVSR_Humanos.md)
   - [`Manuales/Manual_Metodologia_Nakamura_HVSR_Agentes_IA.md`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Manuales/Manual_Metodologia_Nakamura_HVSR_Agentes_IA.md)

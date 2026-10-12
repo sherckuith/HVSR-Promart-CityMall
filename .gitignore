@@ -3,3 +3,6 @@
 
 # Archivos temporales de bloqueo de Office
 ~$*
+
+# Archivos comprimidos de gran tamano (>100MB limite GitHub)
+*.7z
