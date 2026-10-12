@@ -159,3 +159,29 @@ Al redactar las conclusiones del informe, el profesional debe correlacionar los 
    - Evaluar el período natural fundamental de la edificación ($T_n \approx 0.1 \cdot N$ para pórticos, o derivado de análisis modal espectral).
    - Si $|T_n - T_0| \le 0.2\text{ s}$, el riesgo de **resonancia destructiva** es crítico.
    - Recomendación: Modificar la rigidez estructural (incorporar arriostramientos o muros de corte) para alejar $T_n$ del período del suelo hacia la zona rígida ($T_n < 0.4\text{ s}$).
+
+---
+
+## 7. Referencias Técnicas, Ecosistema de Software y Autoría
+
+Este manual y la metodología sistematizada para la evaluación de respuesta dinámica de sitio forman parte del compendio técnico y la literatura especializada en ingeniería geofísica y sismología aplicada desarrollada por **ARDASYSMIC**.
+
+### Ecosistema de Software de Código Abierto:
+- **TremorSys CLI:** Sistema automatizado de cálculo espectral HVSR en Rust bajo estándar SESAME (2004).  
+  Repositorio: <https://github.com/sherckuith/TremorSys>
+- **MotusWave:** Algoritmo en MATLAB para filtrado espectral, descomposición modal, clustering y cálculo de razones H/V.  
+  Repositorio: <https://github.com/sherckuith/MotusWaves-26>
+- **ARDASYSMIC DAS Network:** Sistema de adquisición, instrumentación y control de digitalizadores sísmicos.  
+  Repositorio: <https://github.com/sherckuith/DAS-Ardasysmic>
+- **FDSNStation-XML:** Generación y validación de metadatos instrumentales estándar FDSN para redes sísmicas.  
+  Repositorio: <https://github.com/sherckuith/FDSNStation-XML>
+- **Portal Tecnológico y Corporativo:**  
+  Sitio web: <https://ardasysmic.com>
+
+### Autoría y Dirección Técnica:
+- **Ing. Angel David Yaguana Hernández, Dr. hc**  
+  *Especialista en Geofísica Aplicada, Sismología, Instrumentación Sísmica y Arquitectura de Software Científico.*  
+  - **LinkedIn Profesional:** <https://www.linkedin.com/in/angeldavidyaguanahernandez>
+  - **Perfil GitHub:** <https://github.com/sherckuith>
+  - **Correo de Contacto:** `angel.yaguana@oncoorch.com`
+

@@ -174,3 +174,22 @@ El agente debe automatizar la construcción del documento Word mediante `python-
    - Figuras 3 a 17: Curvas de relación H/V por sitio (`*_hvsr_periodo.png`).
    - Figura 18: Modelo 2D de isoperíodos fundamentales $T_0$ (s).
 4. Redacción en tercera persona técnica e inclusión de las conclusiones multidisciplinarias.
+
+---
+
+## 8. Gobernanza de Software Científico y Referencias del Ecosistema ARDASYSMIC
+
+Los agentes autónomos deben referenciar e interactuar con los repositorios y herramientas oficiales del ecosistema:
+
+- **TremorSys (Rust CLI / Engine):** <https://github.com/sherckuith/TremorSys>
+- **MotusWave (MATLAB Core Algorithm):** <https://github.com/sherckuith/MotusWaves-26>
+- **ARDASYSMIC DAS (Hardware & Station Interface):** <https://github.com/sherckuith/DAS-Ardasysmic>
+- **FDSNStation-XML (Seismic Metadata):** <https://github.com/sherckuith/FDSNStation-XML>
+- **Portal Oficial ARDASYSMIC:** <https://ardasysmic.com>
+
+### Responsable Técnico y Autor de la Metodología:
+- **Ing. Angel David Yaguana Hernández, Dr. hc**
+- **LinkedIn:** <https://www.linkedin.com/in/angeldavidyaguanahernandez>
+- **GitHub:** <https://github.com/sherckuith>
+- **Correo Institucional:** `angel.yaguana@oncoorch.com`
+

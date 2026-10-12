@@ -1,38 +1,61 @@
 # HVSR Promart-CityMall
 
-Estudio geofísico de respuesta dinámica de sitio mediante mediciones de vibración ambiental (técnica Nakamura / HVSR) para el proyecto **PROMART – CITYMALL**, ubicado en Guayaquil, Ecuador. Desarrollado por **ARDASYSMIC**.
+Estudio geofísico de respuesta dinámica de sitio mediante mediciones de vibración ambiental (técnica Nakamura / HVSR) para el proyecto **PROMART – CITYMALL**, ubicado en Guayaquil, Ecuador. Desarrollado y ejecutado por **ARDASYSMIC**.
 
-- **Repositorio Oficial:** <https://github.com/sherckuith/HVSR-Promart-CityMall>
-- **Skill Especializada:** <https://github.com/sherckuith/infonak>
+- **Repositorio Oficial del Proyecto:** <https://github.com/sherckuith/HVSR-Promart-CityMall>
+- **Portal Tecnológico ARDASYSMIC:** <https://ardasysmic.com>
+- **Motor Espectral TremorSys (Rust):** <https://github.com/sherckuith/TremorSys>
+- **Algoritmo MotusWave (MATLAB):** <https://github.com/sherckuith/MotusWaves-26>
+- **Red Instrumental DAS-Ardasysmic:** <https://github.com/sherckuith/DAS-Ardasysmic>
+- **Metadatos Sísmicos FDSNStation-XML:** <https://github.com/sherckuith/FDSNStation-XML>
+- **Skill Especializada para Agentes IA:** <https://github.com/sherckuith/infonak>
 
 ---
 
-## 1. Estructura del Repositorio
+## 1. Responsable Técnico y Autoría
+
+- **Responsable Técnico:** **Ing. Angel David Yaguana Hernández, Dr. hc**  
+  *Especialista en Geofísica Aplicada, Sismología, Instrumentación Sísmica y Arquitectura de Software Científico.*
+- **Perfil Profesional LinkedIn:** <https://www.linkedin.com/in/angeldavidyaguanahernandez>
+- **Perfil Desarrollador GitHub:** <https://github.com/sherckuith>
+- **Correo de Contacto:** `angel.yaguana@oncoorch.com`
+- **Firma Consultora:** **ARDASYSMIC LLC** (*Geosísmica · Instrumentación · Sismología Aplicada*)
+
+---
+
+## 2. Estructura del Repositorio
 
 ```text
-├── RAW/
-│   ├── R13D7/                      # MiniSEED originales de la estación velocimétrica R13D7
-│   └── REAEC/                      # MiniSEED originales de la estación acelerométrica REAEC
-├── Sitios Nakamura/
-│   ├── N1/ ... N15/                # Registros clasificados y verificados por punto de ensayo
-│   └── N#/Registros/Descartados/   # Registros catalogados como no estacionarios / transitorios
-├── Registro Fotografico/           # Registro fotográfico georreferenciado por sitio
-│   └── Poligono de referencia en verde.jpg # Ortofoto con delimitación del polígono
 ├── Informe/
-│   ├── INFORME HVSR Promart CityMall (Geosísmica).docx # Informe técnico oficial final
-│   ├── Resultados de Nakamuras.xlsx                    # Base de datos espectral (Individual y Grupal)
-│   ├── Mapa_Isoperiodos_T0.png                        # Modelo 2D de isoperíodos fundamentales T0
-│   ├── DataSheet.dat / DataSheet.grd                   # Mallas e interpolaciones de Surfer
-│   └── N_Sites.kml / Isoperiodos.kml / IsoT0_std_area.kmz
-├── Bitacora.xlsx                   # Bitácora de campo oficial de tiempos y coordenadas
-├── Bitacora de Registros Nakamuras.xlsx # Registro de inventario por estación
-├── Bitacora de Registros Nakamuras.pdf  # Versión PDF firmada de la bitácora
-└── Manuales/                       # Manuales metodológicos para humanos y agentes IA
+│   ├── HVSR Ardasysmic - Geosísmica - Promart CityMall.docx # Informe técnico oficial final
+│   ├── Bitacora de Registros Nakamuras.xlsx                # Bitácora e inventario de registros
+│   ├── Resultados TremorSys-cli.xlsx                       # Resumen automatizado de ejecuciones CLI
+│   ├── Promart-CityMall - IsoT0_std_area.kml               # Modelo espacial de isoperíodos para Google Earth
+│   └── N_Sites.kml                                         # Ubicación georreferenciada de estaciones
+├── Manuales/                                               # Manuales metodológicos y bitácora técnica
+│   ├── Manual_Metodologia_Nakamura_HVSR_Humanos.md         # Manual para ingenieros y formato libro
+│   ├── Manual_Metodologia_Nakamura_HVSR_Agentes_IA.md       # Especificación algorítmica para IA
+│   └── Registro_Conversacion_Auditoria_HVSR.md             # Registro histórico de la interacción técnica
+├── Procesamiento/                                          # Procesamiento integral y datos
+│   ├── Analisis Automatico TremorSys-cli/                  # Scripts y salidas de TremorSys CLI
+│   │   ├── .devtool/                                       # Scripts de automatización (PowerShell / Python)
+│   │   ├── results_individual/                             # Salidas de análisis individual (JSON / gráficos)
+│   │   └── results_group_filtered/                         # Salidas de análisis grupal consolidado
+│   ├── Analisis Manual - MotusWave/                        # Análisis complementario en MATLAB
+│   │   └── Sitios Nakamura/
+│   ├── Procesamiento Grafico/                              # Curvas H/V y salidas gráficas de alta resolución
+│   ├── RAW/                                                # MiniSEED originales de campo (R13D7 y REAEC)
+│   └── Registros clasificados/                             # Registros organizados por estación N1..N15
+└── Registro Fotografico/                                   # Evidencia fotográfica georreferenciada
+    ├── N1/ ... N15/
+    ├── N2 R13D7/
+    ├── N3 R13D7/
+    └── N9 R13D7/
 ```
 
 ---
 
-## 2. Puntos de Medición y Coordenadas Oficiales
+## 3. Puntos de Medición y Coordenadas Oficiales
 
 Las coordenadas geográficas oficiales de los 15 puntos de ensayo (Nk-01 a Nk-15) fueron validadas y georreferenciadas en campo. Los tiempos se documentan en dos relojes:
 - **Reloj UTC:** tiempo sincronizado con hora satelital universal.
@@ -61,9 +84,9 @@ Las coordenadas geográficas oficiales de los 15 puntos de ensayo (Nk-01 a Nk-15
 
 ---
 
-## 3. Metodología de Procesamiento Espectral (TremorSys CLI)
+## 4. Metodología de Procesamiento Espectral (TremorSys CLI & MotusWave)
 
-El procesamiento espectral se realizó bajo el estándar europeo **SESAME (2004)** empleando el software **TremorSys CLI** mediante un flujo de doble fase:
+El procesamiento espectral se realizó bajo el estándar europeo **SESAME (2004)** empleando el motor **TremorSys CLI** y algoritmos de clustering en **MotusWave**:
 
 ```mermaid
 graph TD
@@ -83,66 +106,64 @@ graph TD
 - **Duración de Ventana Espectral:** 25 a 30 s con 50% de solapamiento.
 - **Suavizado Espectral:** Filtro Konno-Ohmachi ($b = 40$).
 - **Selección de Ventanas:** Algoritmo adaptativo STA/LTA para exclusión de eventos transitorios.
-- **Manejo Instrumental:** Para sensores de velocidad (`R13D7`) procesamiento estándar; para sensores acelerométricos (`REAEC`) activación automática del flag `--units acceleration`.
+- **Manejo Instrumental:** Para sensores de velocidad (`R13D7`) procesamiento estándar; para sensores acelerométricos (`REAEC`) activación obligatoria de la bandera `--units acceleration`.
 
 ---
 
-## 4. Resultados Consolidados de Período Fundamental de Sitio
+## 5. Resultados Consolidados de Período Fundamental de Sitio
 
 A partir del análisis grupal filtrado de las series de microtremores, se obtuvieron los parámetros dinámicos fundamentales:
 
 | Sitio | Punto | Longitud (°) | Latitud (°) | $T_0$ (s) | $f_0$ (Hz) | $A_0$ | $K_g$ | SESAME | Perfil NEC-15 |
 |---|:---:|---:|---:|---:|---:|---:|---:|:---:|:---:|
-| Nk-01 | N1 | -79.9109948 | -2.1389506 | 1.43 | 0.70 | 7.95 | 44.2 | B | **Tipo E** |
-| Nk-02 | N2 | -79.9107470 | -2.1391298 | 1.18 | 0.85 | 1.41 | 2.3 | D | **Tipo E** |
-| Nk-03 | N3 | -79.9104110 | -2.1392937 | 1.18 | 0.85 | 1.24 | 1.8 | D | **Tipo E** |
-| Nk-04 | N4 | -79.9102661 | -2.1391645 | 1.42 | 0.70 | 8.89 | 56.1 | B | **Tipo E** |
-| Nk-05 | N5 | -79.9095325 | -2.1398310 | 1.20 | 0.83 | 6.69 | 53.7 | D | **Tipo E** |
-| Nk-06 | N6 | -79.9097595 | -2.1398780 | 1.25 | 0.80 | 4.40 | 24.2 | B | **Tipo E** |
-| Nk-07 | N7 | -79.9103107 | -2.1397941 | 1.40 | 0.71 | 5.40 | 40.8 | D | **Tipo E** |
-| Nk-08 | N8 | -79.9104797 | -2.1387928 | 1.54 | 0.65 | 11.11 | 189.9 | B | **Tipo E** |
-| Nk-09 | N9 | -79.9114019 | -2.1394408 | 0.90 | 1.11 | 5.90 | 31.4 | D | **Tipo D-E** |
-| Nk-10 | N10 | -79.9115469 | -2.1395091 | 1.54 | 0.65 | 23.74 | 866.5 | B | **Tipo E** |
-| Nk-11 | N11 | -79.9115146 | -2.1394707 | 1.60 | 0.62 | 13.26 | 281.3 | D | **Tipo E** |
-| Nk-12 | N12 | -79.9112014 | -2.1391612 | 1.53 | 0.65 | 6.28 | 60.3 | D | **Tipo E** |
-| Nk-13 | N13 | -79.9107717 | -2.1399517 | 1.54 | 0.65 | 16.17 | 402.2 | B | **Tipo E** |
-| Nk-14 | N14 | -79.9103401 | -2.1402488 | 1.53 | 0.65 | 8.44 | 109.1 | D | **Tipo E** |
-| Nk-15 | N15 | -79.9101212 | -2.1402582 | 1.54 | 0.65 | 6.99 | 75.3 | B | **Tipo E** |
+| Nk-01 | N1 | -79.9109948 | -2.1389506 | 1.43 | 0.70 | 7.95 | 44.2 | B | **Perfil Tipo E** |
+| Nk-02 | N2 | -79.9107470 | -2.1391298 | 1.18 | 0.85 | 1.41 | 2.3 | D | **Perfil Tipo E** |
+| Nk-03 | N3 | -79.9104110 | -2.1392937 | 1.18 | 0.85 | 1.24 | 1.8 | D | **Perfil Tipo E** |
+| Nk-04 | N4 | -79.9102661 | -2.1391645 | 1.42 | 0.70 | 8.89 | 56.1 | B | **Perfil Tipo E** |
+| Nk-05 | N5 | -79.9095325 | -2.1398310 | 1.20 | 0.83 | 6.69 | 53.7 | D | **Perfil Tipo E** |
+| Nk-06 | N6 | -79.9097595 | -2.1398780 | 1.25 | 0.80 | 4.40 | 24.2 | B | **Perfil Tipo E** |
+| Nk-07 | N7 | -79.9103107 | -2.1397941 | 1.40 | 0.71 | 5.40 | 40.8 | D | **Perfil Tipo E** |
+| Nk-08 | N8 | -79.9104797 | -2.1387928 | 1.54 | 0.65 | 11.11 | 189.9 | B | **Perfil Tipo E** |
+| Nk-09 | N9 | -79.9114019 | -2.1394408 | 0.90 | 1.11 | 5.90 | 31.4 | D | **Perfil Tipo D-E** |
+| Nk-10 | N10 | -79.9115469 | -2.1395091 | 1.54 | 0.65 | 23.74 | 866.5 | B | **Perfil Tipo E** |
+| Nk-11 | N11 | -79.9115146 | -2.1394707 | 1.60 | 0.62 | 13.26 | 281.3 | D | **Perfil Tipo E** |
+| Nk-12 | N12 | -79.9112014 | -2.1391612 | 1.53 | 0.65 | 6.28 | 60.3 | D | **Perfil Tipo E** |
+| Nk-13 | N13 | -79.9107717 | -2.1399517 | 1.54 | 0.65 | 16.17 | 402.2 | B | **Perfil Tipo E** |
+| Nk-14 | N14 | -79.9103401 | -2.1402488 | 1.53 | 0.65 | 8.44 | 109.1 | D | **Perfil Tipo E** |
+| Nk-15 | N15 | -79.9101212 | -2.1402582 | 1.54 | 0.65 | 6.99 | 75.3 | B | **Perfil Tipo E** |
 
 ---
 
-## 5. Conclusiones Multidisciplinarias del Comportamiento de Sitio
+## 6. Conclusiones Multidisciplinarias del Comportamiento de Sitio
 
 Los resultados obtenidos fueron interpretados integrando cinco especialidades de la geociencia e ingeniería:
 
-### 1. Enfoque Geotécnico (Ingeniería de Suelos)
-- **Espesor del Paquete Compresible:** Los períodos de vibración en la mayor parte del predio ($T_0 \approx 1.43 - 1.54\text{ s}$) y velocidades de onda de corte estimadas ($V_s \approx 180 - 220\text{ m/s}$) demuestran la existencia de un potente depósito sedimentario blando (limos y arcillas estuarinas de alta compresibilidad) con espesores de **65 a 85 metros** hasta el estrato competente.
-- **Recomendación de Cimentación:** Las soluciones mediante zapatas o losas directas presentarán riesgos de asentamientos por consolidación excesivos. Se recomienda cimentación profunda mediante pilotes apoyados en estratos competentes profundos.
-
-### 2. Enfoque Sismológico
-- **Naturaleza del Campo de Ondas:** Las curvas H/V exhiben campanas sobresalientes de clase SESAME A y B con factores de amplificación elástica $A_0$ entre 4.4 y 16.2 (máximo de 23.7 en Nk-10), lo que confirma un contraste de impedancia acústica muy severo dominado por ondas elípticas Rayleigh superficiales.
-
-### 3. Enfoque Sismorresistente (Norma NEC-15)
-- **Clasificación Sísmica de Sitio:** Debido a que $T_0 > 1.0\text{ s}$, el terreno califica inequívocamente como **Perfil de Suelo Tipo E (Suelo Muy Blando)** conforme a la norma NEC-SE-DS (2015).
-- **Vulnerabilidad de Nakamura ($K_g$):** El índice $K_g = A_0^2 / f_0$ supera ampliamente el umbral crítico de 20 en la totalidad de las estaciones, alertando sobre susceptibilidad extrema a deformaciones inelásticas y pérdida de rigidez cíclica durante sismos mayores.
-
-### 4. Enfoque de Ingeniería Estructural
-- **Riesgo Crítico de Resonancia Suelo-Estructura:** Edificaciones con períodos fundamentales estructurales entre $T_n = 1.0\text{ s}$ y $T_n = 1.6\text{ s}$ (edificios de 10 a 16 pisos, o naves comerciales aporticadas de grandes luces con diafragmas flexibles) experimentarán resonancia directa.
-- **Medidas de Mitigación Estructural:** Para las naves comerciales (tipo almacenes o supermercados Promart), se debe rigidizar el sistema estructural mediante diagonales y arriostramientos concéntricos para desplazar el período fundamental estructural hacia el rango rígido ($T_n < 0.4\text{ s}$).
-
-### 5. Enfoque Matemático y Estadístico
-- **Consistencia Modal:** La distribución de cocientes espectrales confirma estabilidad en el modo fundamental a $0.65 - 0.70\text{ Hz}$ con dispersiones geométricas inferiores al 12%, validando la representatividad física del análisis.
+1. **Enfoque Geotécnico (Mecánica de Suelos):**  
+   Los períodos en la mayor parte del predio ($T_0 \approx 1.43 - 1.54\text{ s}$) y velocidades de onda de corte estimadas ($V_s \approx 180 - 220\text{ m/s}$) confirman un depósito sedimentario blando (arcillas y limos estuarinos de alta compresibilidad) con espesores de **65 a 85 metros** hasta el basamento competente. Se requiere cimentación profunda (pilotes).
+2. **Enfoque Sismológico:**  
+   Curvas H/V de clase SESAME A y B con factores de amplificación elástica $A_0$ entre 4.4 y 16.2 (máximo 23.7 en Nk-10), evidenciando un contraste de impedancia acústica severo dominado por ondas de Rayleigh elípticas.
+3. **Enfoque Sismorresistente (Norma NEC-15):**  
+   Al ser $T_0 > 1.0\text{ s}$, el sitio califica como **Perfil de Suelo Tipo E (Suelo Muy Blando)** conforme a la NEC-SE-DS (2015). Los índices de Nakamura ($K_g > 20$) advierten sobre alta propensión a degradación de rigidez y deformaciones no lineales ante el sismo de diseño.
+4. **Enfoque de Ingeniería Estructural:**  
+   Riesgo crítico de resonancia suelo-estructura para edificaciones aporticadas con períodos propios entre $T_n = 1.0\text{ s}$ y $T_n = 1.6\text{ s}$. Para las naves comerciales Promart se recomienda rigidizar pórticos mediante arriostramientos concéntricos para limitar el período a la zona rígida ($T_n < 0.4\text{ s}$).
+5. **Enfoque Matemático y Estadístico:**  
+   Consistencia modal en $0.65 - 0.70\text{ Hz}$ con dispersión geométrica inferior al 12%, validando la representatividad física del ensayo.
 
 ---
 
-## 6. Documentos y Entregables Asociados
+## 7. Documentos y Entregables del Proyecto
 
-- **Informe Oficial (DOCX):** [`Informe/INFORME HVSR Promart CityMall (Geosísmica).docx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/INFORME%20HVSR%20Promart%20CityMall%20(Geosísmica).docx) (16.5 MB con todas las figuras de curvas H/V, mapa de isoperíodos y fotografías de campo).
-- **Base de Datos Espectral (XLSX):** [`Informe/Resultados de Nakamuras.xlsx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/Resultados%20de%20Nakamuras.xlsx) (124 registros individuales limpios y 15 análisis grupales).
-- **Bitácoras Oficiales:**
-  - [`Bitacora.xlsx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Bitacora.xlsx)
-  - [`Bitacora de Registros Nakamuras.xlsx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Bitacora%20de%20Registros%20Nakamuras.xlsx)
-- **Modelo de Isoperíodos:** [`Informe/Mapa_Isoperiodos_T0.png`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/Mapa_Isoperiodos_T0.png) y archivos Surfer/KML.
+- **Informe Oficial (DOCX):** [`Informe/HVSR Ardasysmic - Geosísmica - Promart CityMall.docx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/HVSR%20Ardasysmic%20-%20Geos%C3%ADsmica%20-%20Promart%20CityMall.docx) (con 18 figuras de alta resolución, curvas H/V, mapa de isoperíodos, firmas y citas bibliográficas completas).
+- **Bases de Datos Espectrales y Bitácoras (XLSX):**
+  - [`Informe/Resultados TremorSys-cli.xlsx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/Resultados%20TremorSys-cli.xlsx)
+  - [`Informe/Bitacora de Registros Nakamuras.xlsx`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Informe/Bitacora%20de%20Registros%20Nakamuras.xlsx)
+- **Modelos de Isoperíodos y Capas GIS:**
+  - Capas KML / KMZ: `Informe/Promart-CityMall - IsoT0_std_area.kml` y `Informe/N_Sites.kml`
+  - Gráficos y mallas en `Procesamiento/Procesamiento Grafico/`
+- **Manuales y Trazabilidad:**
+  - [`Manuales/Manual_Metodologia_Nakamura_HVSR_Humanos.md`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Manuales/Manual_Metodologia_Nakamura_HVSR_Humanos.md)
+  - [`Manuales/Manual_Metodologia_Nakamura_HVSR_Agentes_IA.md`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Manuales/Manual_Metodologia_Nakamura_HVSR_Agentes_IA.md)
+  - [`Manuales/Registro_Conversacion_Auditoria_HVSR.md`](file:///D:/2026/ARDASYSMIC/ARDASYSMIC_26/Trabajos/Promart-CityMall/Manuales/Registro_Conversacion_Auditoria_HVSR.md)
 
 ---
 **ARDASYSMIC** · *Geosísmica, Instrumentación Sísmica y Sismología Aplicada* · 2026
