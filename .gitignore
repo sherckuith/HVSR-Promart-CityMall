@@ -6,3 +6,7 @@
 
 # Archivos comprimidos de gran tamano (>100MB limite GitHub)
 *.7z
+*.rar
+*.zip
+*.mat
+*.wav
